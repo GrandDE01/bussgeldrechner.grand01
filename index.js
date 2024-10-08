@@ -74,7 +74,7 @@ function startCalculating() {
         cache_wanted_amount = cache_wanted_amount + parseInt(fineCollection[i].querySelector(".wantedAmount").getAttribute("data-wantedamount"))
         
         cache_wanted_amount = cache_wanted_amount + fineCollection[i].querySelector(".wantedAmount").querySelectorAll(".selected_extrawanted").length
-        if (cache_wanted_amount > 5) cache_wanted_amount = 5
+        if (cache_wanted_amount > 40) cache_wanted_amount = 5
 
         fineCollectionWantedAmount.push(cache_wanted_amount)
 
@@ -118,8 +118,7 @@ function startCalculating() {
     if (wantedAmount == undefined) wantedAmount = 0
     if (fineAmount == undefined) fineAmount = 0
     
-    console.log("Largest Wanteds:" + maxWanted);  
-    console.log("Largest Fine:" + maxFine);  
+
 
     for (var i = 0; i < fineCollection.length; i++) {
         //fineAmount = fineAmount + parseInt(fineCollection[i].querySelector(".fineAmount").getAttribute("data-fineamount"))
