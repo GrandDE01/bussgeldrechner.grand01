@@ -112,7 +112,7 @@ function startCalculating() {
         }
     }
 
-    wantedAmount = maxWanted
+    wantedAmount = maxwanted
     fineAmount = maxFine
    
     if (wantedAmount == undefined) wantedAmount = 0
